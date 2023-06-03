@@ -1,26 +1,22 @@
-
 import React from 'react';
-import { AiFillPhone, AiOutlineClockCircle } from 'react-icons/ai';
-import { BsChatSquareDots } from 'react-icons/bs';
-
+import { FaFacebook, FaInstagram, FaTwitter, FaGoogle } from 'react-icons/fa';
 
 const Navbar = () => {
 	return (
-		<div className='flex items-center justify-between bg-slate-400 w-[100%] h-[60px] m-auto'>
+		<div className='flex justify-between bg-slate-400 bg-opacity-30 h-[50px]'>
 			<div className='flex items-center ml-[25px]'>
-				<BsChatSquareDots size={35} />
-				<p className='ml-[10px] font-semibold text-xl'>Paradise Island</p>
+				<ul className='flex space-x-6'>
+					<li className='font-semibold'><a href='#'>Home</a></li>
+					<li className='font-semibold'><a href='#'>Gallery</a></li>
+					<li className='font-semibold'><a href='#'>Deals</a></li>
+					<li className='font-semibold'><a href='#'>Contact</a></li>
+				</ul>
 			</div>
-			<div className='flex mr-[25px]'>
-				<div className='flex items-center px-[10px]'>
-					<AiOutlineClockCircle size={25} />
-					<h3 className='ml-[10px]'>9AM - 10PM</h3>
-				</div>
-				<div className='flex items-center ml-[20px]'>
-					<AiFillPhone size={20} />
-					<h3 className='ml-[10px]'>987654321</h3>
-				</div>
-				<button className='ml-[20px] py-2 px-4 rounded-lg bg-purple-300 hover:bg-purple-400'>Request a Quote</button>
+			<div className='flex items-center space-x-6 mr-[20px]'>
+				<FaFacebook size={25} />
+				<FaInstagram size={25}/>
+				<FaTwitter size={25}/>
+				<FaGoogle size={25}/>
 			</div>
 		</div>
 	);
