@@ -1,13 +1,13 @@
 import React from 'react';
-import Tree from '../assets/tree.jpg';
+import ShoreImg from '../assets/shore.jpg';
 
 const Hero = () => {
 	return (
 		<div>
-			<div className='flex flex-col justify-center items-center h-[88vh] bg-cover' style={{backgroundImage: `url(${Tree})`}}>
+			<div className='flex flex-col justify-center items-center h-[88vh] bg-cover' style={{backgroundImage: `url(${ShoreImg})`}}>
 				<h1 className='text-6xl font-normal py-[12px]'>Find your special trip</h1>
 				<h2 className='text-4xl font-extralight py-[12px]'>With Paradise Island</h2>
-				<p className='text-xl font-sans text-center max-w-4xl py-[12px]'>
+				<p className='max-w-4xl text-xl font-sans text-center py-[12px]'>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 				Ut enim ad minim veniam, quis nostrud exercitation ullamco
